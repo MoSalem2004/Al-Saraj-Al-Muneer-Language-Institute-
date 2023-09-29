@@ -1,0 +1,49 @@
+.container.fit.In.CommonQuestions {
+
+  .box {
+    display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid #eee;
+  gap: 5px;
+
+  .Tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Num {
+      background: var(--main-color);
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    div {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: var(--main-color);
+        cursor: pointer;
+      }
+    }
+    .Delete{
+      background-color: red;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}
+  }

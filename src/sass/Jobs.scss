@@ -1,0 +1,79 @@
+.container.fit.VacantJobs.In {
+
+  .Box {
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--White-color);
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .gender {
+      color: #737373;
+      font-size: 14px;
+    }
+
+    button {
+      height: fit-content;
+      background: red;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+
+  .body {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+
+    span:first-child {
+      color: var(--main-color);
+      font-weight: bold;
+    }
+  }
+
+  .footer {
+    .feat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--White-color);
+
+      filter: brightness(0.95);
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      svg {
+        color: var(--main-color);
+      }
+    }
+
+    .JobApplicants {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+
+      .applicants {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+    }
+  }
+}
+  }

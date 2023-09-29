@@ -1,0 +1,53 @@
+.PhotoGallery {
+
+  .Sections {
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &>div {
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+}
+}
+button.delete {
+  background: red;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  color: #fff;
+      height: fit-content;
+}
+.content {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 10px;
+  margin-top: 30px;
+  &> .box{
+    width: 305px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    flex-direction: column;
+    div {
+          display: flex;
+          // flex-direction: column;
+          // gap: 25px;
+          justify-content: space-between;
+          align-items: center;
+    }
+    img {
+      width: 200px;
+    }
+  }
+}

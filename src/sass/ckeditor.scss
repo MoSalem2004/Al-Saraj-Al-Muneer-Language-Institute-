@@ -1,0 +1,10 @@
+.container.News .Create_News .Write_News div:nth-child(3) .ck.ck-editor__editable_inline> :last-child{
+  height: 100px;
+  
+}
+.container.News .Create_News .Write_News div:nth-child(7) .ck.ck-editor__editable_inline> :last-child{
+  height: 350px;
+}
+.container.News .Create_News .Write_News div span.ck-file-dialog-button{
+  display: none !important;
+}
