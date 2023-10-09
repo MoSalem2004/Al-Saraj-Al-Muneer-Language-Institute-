@@ -4,7 +4,6 @@ module.exports = defineConfig({
 });
 
 module.exports = {
-  publicPath:process.env.NODE_ENV === 'production'?'/<Al-Saraj-Al-Muneer-Language-Institute->/' : '/'
   chainWebpack: (config) => {
     const svgRule = config.module.rule("svg");
     svgRule.uses.clear();
