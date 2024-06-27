@@ -4,36 +4,36 @@
       <router-link to="/">
         <div class="logo">
           <img src="../assets/logo-1.jpg" alt="" />
-          <strong>Al Saraj Al Muneer Language Institute </strong>
+          <strong>معهد السراج المنير الأزهري للغات</strong>
         </div>
       </router-link>
       <div class="box">
         <router-link to="/">
           <font-awesome-icon :icon="['fas', 'home']" />
-          Home
+          الرئيسية
         </router-link>
         <router-link :to="{ name: 'PhotoGalleryView' }">
           <font-awesome-icon :icon="['fas', 'images']" />
-          Photo Gallery
+          معرض الصور
         </router-link>
         <router-link :to="{ name: 'TheBlogs' }">
           <font-awesome-icon :icon="['fas', 'newspaper']" />
-          latest news
+          أحدث الأخبار
         </router-link>
-        <router-link to="/">
+        <router-link to="#Connect">
           <font-awesome-icon :icon="['fas', 'thumbs-up']" />
-          Connect us
+          تواصل معنا
         </router-link>
       </div>
       <div class="box">
         <div class="sign">
           <router-link v-if="!user" :to="{ name: 'TheRegister' }">
-            <div class="register">register</div>
+            <div class="register">حساب جديد</div>
           </router-link>
           <router-link v-if="!user" :to="{ name: 'TheLogin' }">
-            <div class="login">Login</div>
+            <div class="login">تسجيل دخول</div>
           </router-link>
-          <span v-if="user" class="user">
+          <span class="user">
             <div @click="TheUser" class="TheUser">
               {{
                 `${this.$store.state.userData?.First_Name[0]?.toUpperCase()} ${this.$store.state.userData?.Last_Name[0]?.toUpperCase()}`
@@ -63,19 +63,19 @@
                   <router-link to="/TheProfile">
                     <font-awesome-icon :icon="['fas', 'user']">
                     </font-awesome-icon>
-                    <span>Profile</span>
+                    <span>الملف الشخصي</span>
                   </router-link>
                 </div>
-                <div class="row_3" v-if="Admin">
+                <div class="row_3">
                   <router-link to="/TheAdmin">
                     <font-awesome-icon :icon="['fas', 'user-cog']" />
-                    <span>Admin</span>
+                    <span>الإشراف</span>
                   </router-link>
                 </div>
                 <div @click="signout" class="row_4">
                   <router-link :to="{ name: 'HomeView' }">
                     <font-awesome-icon :icon="['fas', 'sign-out-alt']" />
-                    <span>Sign Out</span>
+                    <span>تسجيل خروج</span>
                   </router-link>
                 </div>
               </div>
@@ -92,31 +92,31 @@
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'question']" />
-                  <div class="font">Al Saraj Al Muneer Language Institute</div>
+                  <div class="font">معهد السراج المنير للغات</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'newspaper']" />
-                  <div class="font">latest news</div>
+                  <div class="font">أحدث الأخبار</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'history']" />
-                  <div class="font">School history</div>
+                  <div class="font">تاريخ المعهد</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'envelope']" />
-                  <div class="font">School message</div>
+                  <div class="font">رسالة المعهد</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'list-ol']" />
-                  <div class="font">Institute numbers</div>
+                  <div class="font">أرقام المعهد</div>
                 </a>
               </li>
             </ul>
@@ -124,31 +124,31 @@
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'chart-bar']" />
-                  <div class="font">statistics</div>
+                  <div class="font">إحصائيات</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'images']" />
-                  <div class="font">Photo Gallery</div>
+                  <div class="font">معرض الصور</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="/VacantJobsView">
                   <font-awesome-icon :icon="['fas', 'file-signature']" />
-                  <div class="font">vacant jobs</div>
+                  <div class="font">وظائف الخالية</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'comments']" />
-                  <div class="font">common questions</div>
+                  <div class="font">الأسئلة الشائعة</div>
                 </a>
               </li>
               <li class="feat">
                 <a href="#">
                   <font-awesome-icon :icon="['fas', 'thumbs-up']" />
-                  <div class="font">Connect us</div>
+                  <div class="font">تواصل معنا</div>
                 </a>
               </li>
             </ul>
